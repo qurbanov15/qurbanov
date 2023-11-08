@@ -13,7 +13,7 @@ export default function Calculator() {
  
 function inputNum (e){
   const input=e.target.value
-  if(num==="0"){
+  if(num=="0"){
     setNum(input)
   }
   else{
@@ -36,13 +36,7 @@ function changeSign (){
 function porcentagem (){
   setNum(num/100)
 }
-function screenInput(e) {
-  return (
-    
-      <div>{e}</div>
-    
-  )
-}
+
 function operatorHandler(e) {
   let operatorinput = e.target.value
   setOperator(operatorinput)
