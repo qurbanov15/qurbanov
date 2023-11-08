@@ -9,12 +9,11 @@ export default function Calculator() {
  const [num , setNum]=useState(0)
  const[oldnum,setOldNum]=useState()
  const[operator, setOperator]=useState()
- const[click,setClick]=useState(0)
- const[change,setChange]=useState(true)
+
  
 function inputNum (e){
   const input=e.target.value
-  if(num=="0"){
+  if(num==="0"){
     setNum(input)
   }
   else{
@@ -86,7 +85,7 @@ function sadeVuruq(a) {
   const b=[]
   let d=2
  while(d <= k) {
-  if (k % d==0) {
+  if (k % d===0) {
   b.push(d)
   k=k/d
 }
